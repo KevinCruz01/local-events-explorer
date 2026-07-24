@@ -21,3 +21,14 @@ export const createEvent = async (eventData) => {
         throw error;
     }
 };
+
+export const reserveEventTicket = async (eventId, email) => {
+    try {
+        // Hacemos el POST a la URL dinámica del evento enviando el email en el body
+        const response = await axios.post(`${API_URL}/${eventId}/reserve`, { email });
+        return response.data;
+    } catch (error) {
+        console.error('Error reservando ticket:', error);
+        throw error;
+    }
+};

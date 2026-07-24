@@ -37,7 +37,7 @@ function App() {
       <nav className="navbar navbar-dark bg-dark shadow-sm mb-4">
         <div className="container">
           <span className="navbar-brand mb-0 h4 fw-bold">
-            📍 Explorador de Eventos
+            Explorador de Eventos
           </span>
         </div>
       </nav>

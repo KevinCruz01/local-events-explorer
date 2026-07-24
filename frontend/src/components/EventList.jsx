@@ -25,7 +25,7 @@ const EventList = ({ events, onSelectEvent }) => {
             onChange={handleChange} 
             defaultValue=""
         >
-            <option value="" disabled>📍 Buscar y enfocar un evento...</option>
+            <option value="" disabled>Buscar y enfocar un evento...</option>
             {events.map((event) => (
                 <option key={event.id} value={event.id}>
                     {event.title} ({event.category})

@@ -9,7 +9,7 @@ const pool = new Pool({
 });
 
 pool.on('connect', () => {
-    console.log('Conexión a PostgreSQL establecida 🐘');
+    console.log('Conexión a PostgreSQL establecida');
 });
 
 // Exportamos una función query para usarla de forma limpia en nuestros modelos

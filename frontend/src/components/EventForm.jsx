@@ -35,7 +35,7 @@ const EventForm = ({ onEventAdded }) => {
                 });
                 // Avisamos al componente padre (App.jsx) que hay un nuevo evento
                 onEventAdded(result.data);
-                alert('Evento creado con éxito 🎉');
+                alert('Evento creado con éxito');
             }
         } catch (error) {
             alert('Hubo un error al crear el evento');

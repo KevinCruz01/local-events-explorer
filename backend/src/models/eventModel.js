@@ -23,7 +23,15 @@ const getAllEvents = async () => {
     return result.rows;
 };
 
+// Agrega esta función debajo de las que ya tienes
+const getEventById = async (id) => {
+    const query = 'SELECT * FROM events WHERE id = $1;';
+    const result = await db.query(query, [id]);
+    return result.rows[0];
+};
+
 module.exports = {
     createEvent,
-    getAllEvents
+    getAllEvents,
+    getEventById
 };
