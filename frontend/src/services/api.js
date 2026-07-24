@@ -11,3 +11,13 @@ export const getEvents = async () => {
         throw error;
     }
 };
+
+export const createEvent = async (eventData) => {
+    try {
+        const response = await axios.post(API_URL, eventData);
+        return response.data;
+    } catch (error) {
+        console.error('Error creando el evento:', error);
+        throw error;
+    }
+};
